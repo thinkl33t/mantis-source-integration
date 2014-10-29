@@ -15,3 +15,5 @@ $s_plugin_SourceGitlab_hub_app_secret = 'GitLab API Key<br /><span class="small"
 $s_plugin_SourceGitlab_master_branch = 'Hauptbranches<br/><span class="small">(Komma-separierte Liste oder *)</span>';
 
 $s_plugin_SourceGitlab_back_repo = 'Zurück zum Repository';
+
+$MANTIS_ERROR['plugin_SourceGitlab_ERROR_INVALID_PRIMARY_BRANCH'] = 'Ungültige Zeichen in der Hauptbranches';

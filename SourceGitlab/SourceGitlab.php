@@ -159,8 +159,7 @@ public function update_repo_form( $p_repo ) {
 		$f_master_branch = gpc_get_string( 'master_branch' );
 
 		if ( !preg_match( '/\*|^[a-zA-Z0-9_\., -]*$/', $f_master_branch ) ) {
-			echo 'Invalid parameter: \'Primary Branch\'';
-			trigger_error( ERROR_GENERIC, ERROR );
+			plugin_error( 'ERROR_INVALID_PRIMARY_BRANCH', ERROR );
 		}
 
 		$p_repo->info['hub_root'] = $f_hub_root;
